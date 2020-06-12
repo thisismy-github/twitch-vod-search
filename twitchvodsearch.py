@@ -15,11 +15,11 @@ TODO:
 
 from twitch import Helix
 import re, time, argparse
+import cfg
 
 # --- API key ---
-helix = Helix(client_id='abiqngxwr5p4wovuabpye4o27ua4zs',
-              client_secret='ik8r0mghsfvddg43zc62wsc6ve5sio',
-              bearer_token='kk5ea0zzu6qn7a5w7yf60sylmev5on',
+helix = Helix(client_id=cfg.CLIENT_ID,
+              bearer_token=cfg.BEARER_TOKEN,
               use_cache=True)
 
 # --- Argument parser ---
